@@ -39,7 +39,6 @@ model-viewer {
     width: 16px;
 }
 
-/* Hover effect for the hotspot */
 .Hotspot:hover {
     background-color: a.$accent-color;
 }
@@ -50,10 +49,8 @@ model-viewer {
     border-radius: 30px;
     box-shadow: 0 8px 8px rgba(237, 151, 53, 0.25);
     color: rgba(0, 0, 0, 0.8);
-    display: block;
     font-family: a.$body-font-family;
     left: calc(50% + 1em);
-    max-width: 250px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
@@ -65,9 +62,22 @@ model-viewer {
 
 @media screen and (max-width: 767px) {
     .HotspotAnnotation {
-        max-width: 100px;
+        width: 100px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .HotspotAnnotation {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .HotspotAnnotation {
+        width: 300px;
+    }
+}
+
 
 .HotspotAnnotation p {
     font-size: 15px;
@@ -93,7 +103,3 @@ model-viewer {
     margin: 0 auto;
 }
 
-model-viewer::part(default-progress-bar) {
-    height: 30px;
-    background-color: #333;
-}
