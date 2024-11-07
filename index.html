@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SKY Diamond Earbuds</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="hidden">SKY Diamond Earbuds</h1>
+            <div class="grid-con">
+                <img id="logo" src="images/sky-logo.png" 
+                    alt="sky logo" class="col-span-full t-col-span-full l-col-span-full">
+            </div>
+    </header>
+
+<main>
+    <div id="intro" class="grid-con">
+        <section class="col-span-full t-col-start-3 t-col-end-11 l-col-start-4 l-col-end-10">
+            <h2>Diamond in the SKY</h2>
+                <p>
+                    Elevate your audio experience with the SKY earbud, featuring a luxurious diamond design. 
+                    Enjoy premium sound with advanced noise cancellation and deep bass. 
+                    Designed for comfort and durability, the SKY earbud is your perfect 
+                    all-day audio companion.
+                </p>
+        </section>
+    </div>
+
+    <div class="full-width-grid-con">
+        <model-viewer class="col-span-full t-col-span-full l-col-span-full"
+                            src="model/Earbud_SKY-Raw.gltf" 
+                            alt="A 3D model of the earbud" 
+                            auto-rotate camera-controls
+                            poster="images/poster.webp"
+                            >
+
+                            <button class="Hotspot" slot="hotspot-1" 
+                                    data-position="0.9970961041438346m -3.0269487337460035m 2.8514028422228233m" 
+                                    data-normal="0.2850778469788468m 0.07767878896483099m 0.9553515724103157m" 
+                                    data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation" style="opacity: 0;"></div>
+                            </button>
+    
+                            <button class="Hotspot" slot="hotspot-2" 
+                                    data-position="1.7652234628652792m -3.86215698884979m -0.88250790305971m" 
+                                    data-normal="-0.729254038445276m -0.6796551319102969m -0.07910403958871456m" 
+                                    data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation"></div>
+                            </button>
+    
+                            <button class="Hotspot" slot="hotspot-3" 
+                                    data-position="-0.2879807222909083m -4.41227042951186m -1.8921089289234163m" 
+                                    data-normal="0.3292946487521285m 0.19217429490522417m 0.9244642095186228m" 
+                                    data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation"></div>
+                            </button>
+    
+                            <button class="Hotspot" slot="hotspot-4" 
+                                    data-position="0.04602388610593344m -1.132478090359684m -0.20810281122411034m" 
+                                    data-normal="0.26068803213049935m -0.44523293041723516m 0.8566267492764917m" 
+                                    data-visibility-attribute="visible">
+                                <div class="HotspotAnnotation"></div>
+                            </button>
+        </model-viewer>
+    </div>
+
+    <div id="sky-color" class="grid-con">
+        <div class="col-span-full t-col-start-3 t-col-end-11 l-col-start-4 l-col-end-10">
+            <h2>SKY color</h2>
+            <p>
+                The SKY earbuds are available in a stunning array of colors to suit every style. 
+                Choose from Chic Pink, Bold Blue, Vibrant Orange, and Classic Black, 
+                allowing you to express your personality while enjoying premium sound. 
+                With such a variety, there's a perfect pair of SKY earbuds for everyone!
+            </p>
+        </div>
+
+        <div id="earbud-color" class="col-span-full t-col-span-full">
+            <div class="box" id="ear-pink">
+                <img src="images/ear-pink.png" alt="Earbud Pink">
+                <p>Chic Pink</p>
+            </div>
+
+            <div class="box" id="ear-blue">
+                <img src="images/ear-blue.png" alt="Earbud Blue">
+                <p>Bold Blue</p>
+            </div>
+
+            <div class="box" id="ear-orange">
+                <img src="images/ear-orange.png" alt="Earbud Orange">
+                <p>Vibrant Orange</p>
+            </div>
+            
+            <div class="box" id="ear-black">
+                <img src="images/ear-black.png" alt="Earbud Black">
+                <p>Classic Black</p>
+            </div>
+        </div>   
+    </div>
+
+</main>
+
+<footer>
+    <h1 class="hidden">footer</h1>
+    <div class="grid-con">
+        <img id="footer-logo" src="images/sky-logo.png" alt="sky logo" class="col-span-full t-col-span-full l-col-span-full">
+    </div>
+
+    <h2 class="hidden">SKY social media</h2>
+    <div id="footer-social-icons" class="col-span-full t-col-span-full">
+        <a href="#"><img src="images/icon-fb.png" alt="Facebook"></a>
+        <a href="#"><img src="images/icon-ig.png" alt="Instagram"></a>
+        <a href="#"><img src="images/icon-youtube.png" alt="YouTube"></a>
+    </div>
+    
+    <div class="grid-con">
+        <p id="privacy-policy" class="col-span-full t-col-span-full l-col-span-full">
+            ©2024 SKY. All Rights Reserved. Privacy Policy
+        </p>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
