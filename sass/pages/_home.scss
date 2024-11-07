@@ -1,0 +1,151 @@
+@use '../abstracts/variables' as a;
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../images/diamond-bg.png');
+    background-size: cover; 
+    background-position: center;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+#logo, #footer-logo {
+    width: 50vw;
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    #logo, #footer-logo { width: 40vw; }  
+}
+
+@media screen and (min-width: 1200px) {
+    #logo, #footer-logo { width: 25vw; }  
+}
+
+#intro h2, #sky-color h2 {
+    text-align: center; 
+}
+
+p {
+    text-align: center;
+}
+
+#earbud-color p {
+    background-color: #fef7d188;
+    color: a.$body-text-color; 
+    font-size: 1rem;
+    border: none;
+    border-radius: 50%; 
+    padding: 30px; 
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 767px) {
+    #earbud-color {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        width: 100%; 
+    }
+    
+    .box {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        max-width: 80%; 
+        border: none;
+        margin: 0 auto; 
+    }
+
+    #earbud-color img {
+        width: 100vw; 
+        max-width: 300px; 
+    }
+
+    #earbud-color p {
+        position: absolute;
+    }
+}
+
+#earbud-color {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.box {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    max-width: 80px;
+    border: none; 
+}
+
+@media screen and (min-width: 768px) {
+#earbud-color img {
+    width: 25vw;
+}
+
+#earbud-color p {
+    position: absolute;
+    width: 1rem; 
+    height: 1rem; 
+    font-size: 1rem;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    #earbud-color p {
+    width: 1.5rem; 
+    height: 1.5rem; 
+    font-size: 1.2rem;
+}}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 30px;
+}
+
+#footer-social-icons {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  #footer-social-icons img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin: 8px;
+    opacity: 0.5;
+  }
+
+#privacy-policy {
+    margin-top: 10px; 
+}
