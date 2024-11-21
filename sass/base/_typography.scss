@@ -2,10 +2,9 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: v.$heading-font-family;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    font-size: 30px;
 }
 
 body {
@@ -14,13 +13,16 @@ body {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: v.$primary-color;
+    padding-top: 1.5rem;
 }
 
 p {
     font-family: v.$body-font-family;
     font-weight: 300;
+    font-size: 0.9rem;
     line-height: 25px;
     color: white;
+    padding-top: 10px;
 }
