@@ -182,35 +182,35 @@ for(let i = 0; i < frameCount; i++){
   slider.addEventListener("input", moveDivisor);
 
 // 8_Plyr video player
-  const player = new Plyr('#ear-video');
+    const player = new Plyr('#ear-video');
 
-  const playButton = document.getElementById('play-button');
-  const pauseButton = document.getElementById('pause-button');
-  const muteButton = document.getElementById('mute-button');
-  const fullscreenButton = document.getElementById('fullscreen-button');
+    const playButton = document.querySelector('#play-button');
+    const pauseButton = document.querySelector('#pause-button');
+    const muteButton = document.querySelector('#mute-button');
+    const fullscreenButton = document.querySelector('#fullscreen-button');
 
-  if (playButton && pauseButton && muteButton && fullscreenButton) {
-      playButton.addEventListener('click', () => {
-          player.play();
-          playButton.style.display = 'none'; 
-          pauseButton.style.display = 'inline';
-      });
+    if (playButton && pauseButton && muteButton && fullscreenButton) {
+        playButton.addEventListener('click', () => {
+            player.play();
+            playButton.style.display = 'none'; 
+            pauseButton.style.display = 'inline';
+        });
 
-      pauseButton.addEventListener('click', () => {
-          player.pause();
-          pauseButton.style.display = 'none';
-          playButton.style.display = 'inline'; 
-      });
+        pauseButton.addEventListener('click', () => {
+            player.pause();
+            pauseButton.style.display = 'none';
+            playButton.style.display = 'inline'; 
+        });
 
-      muteButton.addEventListener('click', () => {
-          player.muted = !player.muted; 
-          muteButton.textContent = player.muted ? 'Unmute' : 'Mute'; 
-      });
+        muteButton.addEventListener('click', () => {
+            player.muted = !player.muted; 
+            muteButton.textContent = player.muted ? 'Unmute' : 'Mute'; 
+        });
 
-      fullscreenButton.addEventListener('click', () => {
-          player.fullscreen.toggle(); 
-      });
-  }
+        fullscreenButton.addEventListener('click', () => {
+            player.fullscreen.toggle(); 
+        });
+    }
 
 
 // 9_Scroll Trigger - Diamond View
