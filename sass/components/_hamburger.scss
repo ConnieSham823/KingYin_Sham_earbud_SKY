@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as a;
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+#hamburger {
+    padding-left: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+  #hamburger button, #close {
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  #close {
+    color: black;
+   }
+
+  @media screen and (min-width: 768px) {
+    #hamburger {
+        padding-top: 0.5rem;
+    }
+    
+    #hamburger button {
+        font-size: 40px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    #hamburger {
+        padding-top: 1rem;
+    }
+    
+    #hamburger button {
+        font-size: 40px;
+    }
+  }
+
+  #hamburger:hover {
+    color: a.$accent-color;
+  }
+
+  #close:hover {
+    color: a.$accent-color;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #fef7d1df;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .overlay.open {
+    display: flex;
+  }
+  
+  #close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .overlay ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .overlay li {
+    margin: 20px 0;
+  }
+  
+  .overlay a {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .overlay a:hover {
+    color: a.$accent-color;
+    text-decoration: underline;
+  }
