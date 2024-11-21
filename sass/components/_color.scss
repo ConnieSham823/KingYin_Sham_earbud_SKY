@@ -1,0 +1,95 @@
+#ear-buds {
+    width: 100vw;
+}
+
+#buds-con img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#color-con > #pink {
+    background-color: #d8a1c0;
+    margin-right: 20px;
+}
+
+#color-con > #orange {
+    background-color: rgb(244, 157, 18);
+    margin-right: 20px;
+}
+
+#color-con > #blue {
+    background-color: rgb(110, 198, 220);
+    margin-right: 20px;
+}
+
+#color-con > #black {
+    background-color: rgb(21, 20, 20);
+}
+
+#pink:hover, #orange:hover, #blue:hover, #black:hover {
+    transform: scale(1.2);
+}
+
+
+#color-con button {
+    border: 0;
+    width: 15px; 
+    height: 15px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    box-shadow: 5px 8px 15px rgb(255, 255, 255); 
+    transition: transform 0.3s ease; 
+}
+
+#color-con {
+    position: absolute;
+    top: 20%;
+    transform: translateX(30%);
+}
+
+#color-con button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+@media screen and (min-width: 768px) {
+    #color-con button {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    #color-con {
+        top: 32%;
+        transform: translateX(38%);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #color-con button {
+        width: 40px;
+        height: 40px; 
+    }
+
+    #color-con {
+        top: 50%;
+        transform: translateX(45%);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #color-con {
+        top: 60%;
+        transform: translateX(60%);
+    }
+}
+
+
+
