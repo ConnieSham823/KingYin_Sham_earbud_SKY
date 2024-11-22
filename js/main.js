@@ -157,7 +157,7 @@ for(let i = 0; i < frameCount; i++){
             scrub: 1,
             markers: false,
             start: "top top",
-            end:"300% end"
+            end:"250% end"
         },
         onUpdate: render
     })
